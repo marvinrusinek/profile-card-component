@@ -45,11 +45,8 @@ main {
           }
         }
 
-        ul.cards {
+        ul {
           align-content: center;
-          display: grid;
-          grid-template-areas:
-          "followers likes photos";
           margin-bottom: -30px;
 
           li {
