@@ -1,0 +1,94 @@
+main {
+  display: flex;
+  justify-content: center;
+  background:  url('../../../../assets/images/bg-pattern-top.svg') no-repeat -300px -400px, url('../../../../assets/images/bg-pattern-bottom.svg') no-repeat 690px 450px, hsl(185, 75%, 39%);
+  height: fit-content;
+  margin: -10px;
+
+  mat-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 520px;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
+
+    .content {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      .rounded-image {
+        display: flex;
+        justify-content: center;
+        margin-top: -60px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+
+      background-color: white;
+      margin: -15px;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .name-age {
+          display: flex;
+          flex-direction: row;
+
+          .age {
+            color: gray;
+            padding-left: 25px;
+          }
+        }
+
+        ul.cards {
+          align-content: center;
+          display: grid;
+          grid-template-areas:
+          "followers likes photos";
+          margin-bottom: -30px;
+
+          li {
+            .card {
+              padding-right: 75px;
+
+              h2 {
+                color: black;
+              }
+
+              .metadata {
+                color: gray;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .attribution {
+    grid-area: footer;
+    font-size: 11px;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 37.5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    a {
+      color: hsl(228, 45%, 44%);
+
+      &:hover {
+        color: turquoise;
+      }
+    }
+  }
+}
